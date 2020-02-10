@@ -52,6 +52,14 @@ func SurfaceAreaRectangularPrism(width: Double, length: Double, height: Double) 
     return 2*(width*height + length*width + length*height)
 }
 
+func SurfaceAreaCone(radius: Double, side: Double) -> Double {
+    
+    let lateralSurface = Double.pi * radius * side
+    let base = Double.pi * (radius * radius)
+    
+    return lateralSurface + base
+}
+
 
 /*:
  [Previous: Writing Documentation](@previous) | Page 7

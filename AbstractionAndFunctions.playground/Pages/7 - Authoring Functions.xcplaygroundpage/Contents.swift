@@ -37,6 +37,12 @@ func PerimeterOfATriangle(side1: Double, side2: Double, side3: Double) -> Double
     return side1 + side2 + side3
 }
 
+func AreaOfATriangle(base: Double, height: Double) -> Double {
+    
+    return  (base * height)/2
+}
+
+
 /*:
  [Previous: Writing Documentation](@previous) | Page 7
  */

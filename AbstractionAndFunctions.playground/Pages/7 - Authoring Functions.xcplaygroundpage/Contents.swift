@@ -27,6 +27,10 @@ import Foundation
  */
 // Begin your work here...
 
+func perimeterOfARectangle(length: Double, Width: Double) -> Double {
+    
+    return 2 * length + 2 * Width
+}
 
 
 /*:

@@ -42,6 +42,11 @@ func AreaOfATriangle(base: Double, height: Double) -> Double {
     return  (base * height)/2
 }
 
+func AreaOfARectangle(length: Double, width: Double) -> Double {
+    
+    return length * width
+}
+
 
 /*:
  [Previous: Writing Documentation](@previous) | Page 7

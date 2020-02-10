@@ -60,7 +60,10 @@ func SurfaceAreaCone(radius: Double, side: Double) -> Double {
     return lateralSurface + base
 }
 
-
+func SurfaceAreaSphere(radius: Double) -> Double {
+    
+    return 4 * Double.pi * (radius * radius)
+}
 /*:
  [Previous: Writing Documentation](@previous) | Page 7
  */

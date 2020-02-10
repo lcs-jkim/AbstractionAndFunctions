@@ -69,6 +69,11 @@ func VolumeCylinder(radius: Double, height: Double) -> Double {
     
     return Double.pi * (radius * radius) * height
 }
+
+func VolumeSphere(radius: Double) -> Double {
+    
+    return (4/3) * Double.pi * (radius * radius * radius)
+}
 /*:
  [Previous: Writing Documentation](@previous) | Page 7
  */

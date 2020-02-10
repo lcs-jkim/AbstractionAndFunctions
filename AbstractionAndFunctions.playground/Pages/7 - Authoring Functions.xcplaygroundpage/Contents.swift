@@ -39,7 +39,7 @@ func PerimeterOfATriangle(side1: Double, side2: Double, side3: Double) -> Double
 
 func AreaOfATriangle(base: Double, height: Double) -> Double {
     
-    return  (base * height)/2
+    return  (1/2)*(base * height)
 }
 
 func AreaOfARectangle(length: Double, width: Double) -> Double {
@@ -63,6 +63,11 @@ func SurfaceAreaCone(radius: Double, side: Double) -> Double {
 func SurfaceAreaSphere(radius: Double) -> Double {
     
     return 4 * Double.pi * (radius * radius)
+}
+
+func VolumeCylinder(radius: Double, height: Double) -> Double {
+    
+    return Double.pi * (radius * radius) * height
 }
 /*:
  [Previous: Writing Documentation](@previous) | Page 7

@@ -47,6 +47,11 @@ func AreaOfARectangle(length: Double, width: Double) -> Double {
     return length * width
 }
 
+func SurfaceAreaRectangularPrism(width: Double, length: Double, height: Double) -> Double {
+    
+    return 2*(width*height + length*width + length*height)
+}
+
 
 /*:
  [Previous: Writing Documentation](@previous) | Page 7

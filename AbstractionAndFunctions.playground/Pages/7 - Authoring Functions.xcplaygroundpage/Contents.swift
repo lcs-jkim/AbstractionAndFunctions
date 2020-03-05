@@ -47,6 +47,12 @@ let result4 = AreaOfATriangle(base: 4, height: 2)
 // Test case #2 - base: -4, height: 2, result: nil
 let result5 = AreaOfATriangle(base: -4, height: 2)
 
+// Test case #3 - base: -4, height: -2, result: nil
+let result6 = AreaOfATriangle(base: -4, height: -2)
+
+// Test case #4 = base: 4, height: -2, result: nil
+let result7 = AreaOfATriangle(base: 4, height: -2)
+
 func AreaOfARectangle(length: Double, width: Double) -> Double {
     
     return length * width

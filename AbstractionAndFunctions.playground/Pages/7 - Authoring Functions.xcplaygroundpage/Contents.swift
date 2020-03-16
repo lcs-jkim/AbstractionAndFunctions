@@ -26,10 +26,26 @@ let result2 = PerimeterOfARectangle(length: -2, width: 4)
 let result3 = PerimeterOfARectangle(length: 2, width: -4)
 
 
-func PerimeterOfATriangle(side1: Double, side2: Double, side3: Double) -> Double {
+func PerimeterOfATriangle(side1: Double, side2: Double, side3: Double) -> Double? {
+    
+  guard side1 > 0, side2 > 0, side3 > 0 else {
+        return nil
+    }
     
     return side1 + side2 + side3
 }
+
+// Test case #1 - side1: 2, side2: 5, side3: 3, result: 10
+let result8 = PerimeterOfATriangle(side1: 2, side2: 5, side3: 3)
+
+// Test case #2 - side1: -2, side2: 6, side3: 4, result: nil
+let result9 = PerimeterOfATriangle(side1: -2, side2: 6, side3: 4)
+
+// Test case #3 - side1: 2, side2: -6, side3: 4, result: nil
+let result10 = PerimeterOfATriangle(side1: 2, side2: -6, side3: 4)
+
+// Test case #4 - side1: 2, side2: 6, side3: -4, result: nil
+let result11 = PerimeterOfATriangle(side1: 2, side2: 6, side3: -4)
 
 
 func AreaOfATriangle(base: Double, height: Double) -> Double? {

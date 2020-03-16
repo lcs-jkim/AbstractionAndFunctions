@@ -69,11 +69,24 @@ let result6 = AreaOfATriangle(base: -4, height: -2)
 // Test case #4 = base: 4, height: -2, result: nil
 let result7 = AreaOfATriangle(base: 4, height: -2)
 
-func AreaOfARectangle(length: Double, width: Double) -> Double {
+
+func AreaOfARectangle(length: Double, width: Double) -> Double? {
+    
+  guard length > 0, width > 0 else {
+        return nil
+    }
     
     return length * width
 }
 
+// Test case #1 - length: 3, width: 2, result: 6
+let result12 = AreaOfARectangle(length: 3, width: 2)
+
+// Test case #2 - length: -3, width: 2, result: nil
+let result13 = AreaOfARectangle(length: -3, width: 2)
+
+// Test case #3 - length: 3, width: -2, resutl: nil
+let resutlt14 = AreaOfARectangle(length: 3, width: -2)
 
 func SurfaceAreaRectangularPrism(width: Double, length: Double, height: Double) -> Double {
     
